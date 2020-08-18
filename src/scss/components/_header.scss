@@ -1,4 +1,6 @@
 #app-header {
     grid-area: header;
+    position: sticky;
+    top: 0;
     background-color: $brand-dark;
 }
