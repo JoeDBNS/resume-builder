@@ -1,0 +1,21 @@
+html, body, main {
+	font-family: Monospace;
+	color: $black;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main" "." "footer";
+    grid-template-rows: 40px auto 0 80px;
+}
+
+main {
+    grid-area: main;
+    background-color: $brand-lite;
+    padding: 8px 18px;
+}
+
+.page {
+    // display: none;
+}

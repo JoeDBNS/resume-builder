@@ -1,0 +1,91 @@
+label,
+legend {
+    font-size: 1rem;
+    user-select: none;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="time"],
+input[type="date"],
+input[type="datetime-local"] {
+    background-color: $white;
+    border: 1px solid $brand-secondary;
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+    transition: linear 0.1s border;
+    &:focus {
+        outline: none;
+        border: 1px solid $brand-secondary-dark;
+    }
+}
+textarea {
+    @extend input[type="text"];
+    resize: vertical;
+    min-height: 7rem;
+}
+select {
+    @extend input[type="text"];
+    padding: 0.425rem 0.5rem;
+}
+input[type="file"] {
+    @extend input[type="text"];
+    padding: 0.3rem 0.25rem;
+}
+input[type="color"] {
+    @extend input[type="text"];
+    height: 2.5rem;
+}
+input[type="range"] {
+    width: 100%;
+    padding: 0.35rem 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    width: 0;
+    height: 0;
+    visibility: visible;
+    opacity: 0;
+    &:checked {
+        + label > .label-box-display > svg {
+            opacity: 1;
+        }
+    }
+    &:focus {
+        + label {
+            box-shadow: 0 0 4px $brand-secondary-dark;
+        }
+    }
+}
+input[type="checkbox"] {
+    + label > .label-box-display {
+        border-radius: 4px;
+    }
+}
+input[type="radio"] {
+    + label > .label-box-display {
+        border-radius: 100%;
+    }
+}
+.input-set {
+    margin: 14px 0;
+}
+.label-box-display {
+    background-color: $white;
+    display: inline-block;
+    border: 1px solid $gray;
+    user-select: none;
+    cursor: pointer;
+    svg {
+        opacity: 0;
+        transition: linear 0.05s all;
+    }
+}
+.label-text {
+    margin-left: 0.25rem;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Build and congure personalized resumes from templates through a guided process.">
+
+    <!-- OG meta tags -->
+    <meta property="og:site_name" content="github.com/JoeDBNS">
+    <meta property="og:title" content="resume-builder">
+    <meta property="og:description" content="Build and congure personalized resumes from templates through a guided process.">
+    <meta property="og:url" content="https://github.com/JoeDBNS/resume-builder">
+    <!-- <meta property="og:image" content="static/img/siteimage.png"> -->
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+
+    <title>resume-builder</title>
+
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body>
+    <header id="app-header">
+        <h1>Resume Builder</h1>
+    </header>
+
+    <main id="app-main">
+        <div class="page" v-show="current_page === 'welcome'" v-cloak>
+            <section>
+                <h1>Welcome</h1>
+                <ol>
+                    <li>Select a template</li>
+                    <li>Populate your data</li>
+                    <li>Save or download your resume</li>
+                </ol>
+                <button @click="current_page = 'template'">Get Started</button>
+            </section>
+        </div>
+
+        <div class="page" v-show="current_page === 'template'" v-cloak>
+            <section>
+                <h1>Template</h1>
+                <button @click="current_page = 'welcome'">Back</button>
+            </section>
+        </div>
+    </main>
+
+    <footer id="app-footer">
+        footer
+    </footer>
+
+    <script src="./static/js/vue.min.js"></script>
+    <script src="./static/js/main.js"></script>
+</body>
+
+</html>

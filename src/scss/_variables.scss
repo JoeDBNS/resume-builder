@@ -1,0 +1,39 @@
+$breakpoints: (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px
+);
+
+// main colors
+$black: #000000;
+$blue: #007bff;
+$blue-dark: #005fc5;
+$cyan: #17a2b8;
+$gray: #6c757d;
+$gray-light: #d3d3d3;
+$gray-dark: #343a40;
+$green: #28a745;
+$indigo: #6610f2;
+$orange: #fd7e14;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$teal: #20c997;
+$white: #fff;
+$yellow: #ffc107;
+
+// brand colors
+$brand: #e7f0fe;
+$brand-lite: #f3f8fe;
+$brand-dark: #dce9fd;
+$brand-secondary: #2C7AFF;
+$brand-secondary-lite: #F3F8FE;
+$brand-secondary-dark: #1f65dd;
+
+$brand-gray-500: #d6d8da;
+$brand-gray-400: #E0E2E5;
+$brand-gray-300: #ebebeb;
+$brand-gray-200: #eff0f1;
+$brand-gray-100: #f9f9f9;
