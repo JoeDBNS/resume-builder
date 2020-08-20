@@ -3,7 +3,7 @@ button {
     padding: 0.5rem 1.25rem;
     margin: auto;
     border: 1px solid $brand-secondary;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: linear 0.1s all, linear 0.025s transform;
     &:hover {
         background-color: $brand-secondary-lite;
